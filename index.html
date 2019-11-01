@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/6fa58d3a47.js"
+      crossorigin="anonymous"
+	></script>
+  </body>
+    <link rel="stylesheet" type="text/css" href="portfolio.css" />
+    <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Mansalva&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="background">
+      <div class="nav">
+        <ul>
+          <li><a class="a active" href="#">HOME</a></li>
+          <li><a class="b" href="About.html">ABOUT ME</a></li>
+          <li><a class="c" href="projects.html" >PROJECTS</a></li>
+          <li><a class="d" href="contact.html">CONTACT ME</a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <div class="home" class="img-circular">
+          <img
+            class="img-circular"
+            src="./images/tashiie.jpg"
+            alt="profiles"
+            height="250"
+            width="250"
+          /> 
+          <h1>Tashreeq Hendricks</h1>
+          <h3>Programmer</h3>
+        </div>
+      
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("a").click(function() {
+          // alert('i am click')
+          var selected = $(this);
+          $("a").removeClass("active");
+          $(selected).addClass("active");
+        });
+        var $a = $("a");
+        $b = $(".b");
+        $c = $(".c");
+        $d = $(".d");
+        $home = $(".home");
+        $about = $(".about");
+        $projects = $(".projetcs");
+        $contact = $(".contact");
+
+        $a.click(function() {
+          $home.fadeIn();
+          $about.fadeOut();
+          $projects.fadeOut();
+          $contact.fadeOut();
+        });
+        $b.click(function() {
+          $about.fadeIn();
+          $home.fadeOut();
+          $projects.fadeOut();
+          $contact.fadeOut();
+        });
+        $c.click(function() {
+          $projects.fadeIn();
+          $about.fadeOut();
+          $home.fadeOut();
+          $contact.fadeOut();
+        });
+        $d.click(function() {
+          $contact.fadeIn();
+          $home.fadeOut();
+          $projects.fadeOut();
+          $about.fadeOut();
+        });
+      });
+    </script>
+  </body>
+</html>
